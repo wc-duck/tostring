@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/wc-duck/tostring.svg?branch=master)](https://travis-ci.org/wc-duck/tostring)
-[![Build status](https://ci.appveyor.com/api/projects/status/ebe2yl78l9pv38rv)](https://ci.appveyor.com/project/wc-duck/tostring)
+[![Build status](https://ci.appveyor.com/api/projects/status/4ee230jjbw8d4on9?svg=true)](https://ci.appveyor.com/project/wc-duck/tostring)
 
 # About:
 Small, single-file, TOSTR() macro to use with printf() and friends.
