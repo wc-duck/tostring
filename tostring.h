@@ -142,10 +142,4 @@ struct _TOSTR_buffer_holder
 		(128)
 #endif
 
-TOSTR_DEFINE_TYPE_FUNCTION( int, 8 )          { out.put( "%d",  value ); }
-TOSTR_DEFINE_TYPE_FUNCTION( unsigned int, 8 ) { out.put( "%u",  value ); }
-TOSTR_DEFINE_TYPE_FUNCTION( size_t, 8 )       { out.put( "%lu", value ); }
-TOSTR_DEFINE_TYPE_FUNCTION( float, 8 )        { out.put( "%f",  value ); }
-TOSTR_DEFINE_TYPE_FUNCTION( double, 8 )       { out.put( "%f",  value ); }
-
 #endif // TOSTRING_H_INCLUDED
