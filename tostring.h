@@ -79,6 +79,12 @@
 
 // ... implementation details ...
 
+#if defined(__GNUC__) || defined(__clang__)
+	#define TOSTR_PRINTF_FMT( fmt, args ) __attribute__((format(printf, fmt, args)))
+#else
+	#define TOSTR_PRINTF_FMT( fmt, args )
+#endif
+
 template< typename T >
 struct _TOSTR_type_size;
 
@@ -93,7 +99,7 @@ struct _TOSTR_builder
 		, buffer( _buffer )
 	{}
 
-	inline void put( const char* fmt, ... )
+	inline void put( const char* fmt, ... ) TOSTR_PRINTF_FMT(2, 3)
 	{
 		va_list lst;
 		va_start( lst, fmt );
